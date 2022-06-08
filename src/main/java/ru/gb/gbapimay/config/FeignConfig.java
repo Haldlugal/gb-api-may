@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Import;
 import ru.gb.gbapimay.category.api.CategoryGateway;
 import ru.gb.gbapimay.manufacturer.api.ManufacturerGateway;
 import ru.gb.gbapimay.product.api.ProductGateway;
+import ru.gb.gbapimay.security.UserGateway;
 
 /**
  * @author Artem Kropotov
@@ -35,5 +36,10 @@ public class FeignConfig {
     @Bean
     public ProductGateway productGateway() {
         return feignClientFactory.newFeignGateway(ProductGateway.class, gbApiProperties.getEndpoint().getProductUrl());
+    }
+
+    @Bean
+    public UserGateway userGateway() {
+        return feignClientFactory.newFeignGateway(UserGateway.class, gbApiProperties.getEndpoint().getUserUrl());
     }
 }
