@@ -34,6 +34,11 @@ public class FeignConfig {
     }
 
     @Bean
+    public CategoryGateway categoryFrontGateway() {
+        return feignClientFactory.newFeignGateway(CategoryGateway.class, gbApiProperties.getEndpoint().getCategoryUrl());
+    }
+
+    @Bean
     public ProductGateway productGateway() {
         return feignClientFactory.newFeignGateway(ProductGateway.class, gbApiProperties.getEndpoint().getProductUrl());
     }

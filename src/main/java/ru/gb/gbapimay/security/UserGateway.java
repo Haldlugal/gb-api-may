@@ -15,5 +15,7 @@ public interface UserGateway {
     @PostMapping
     ResponseEntity<UserDto> handlePost(@Validated @RequestBody UserDto userDto);
 
+    @PostMapping("/login")
+    ResponseEntity<LoginResponseBody> handleLogin(@RequestBody AuthenticationUserDto authenticationUserDto);
 
 }
