@@ -6,6 +6,7 @@ import ru.gb.gbapimay.common.enums.OrderStatus;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.List;
 
 @Setter
 @Getter
@@ -23,6 +24,6 @@ public class OrderDto {
     private BigDecimal deliveryPrice;
     private Address deliveryAddress;
     private Address shopAddress;
-//    private AccountUser accountUser; // todo дз 10 сделать user dto который будет храниться с заказом dto
-//    private List<OrderItem> orderItems; // todo сделать orderItem dto который будет храниться с заказом dto
+    private OrderAccountUserDto accountUser; // todo дз 10 сделать user dto который будет храниться с заказом dto
+    private List<OrderItemDto> orderItems; // todo сделать orderItem dto который будет храниться с заказом dto
 }
