@@ -6,16 +6,12 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-/**
- * @author Artem Kropotov
- * created at 27.05.2022
- **/
 public interface UserGateway {
 
     @PostMapping
     ResponseEntity<UserDto> handlePost(@Validated @RequestBody UserDto userDto);
 
     @PostMapping("/login")
-    ResponseEntity<LoginResponseBody> handleLogin(@RequestBody AuthenticationUserDto authenticationUserDto);
+    ResponseEntity<ru.gb.gbapimay.security.LoginResponseBody> handleLogin(@RequestBody AuthenticationUserDto authenticationUserDto);
 
 }

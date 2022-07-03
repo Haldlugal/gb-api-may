@@ -7,10 +7,6 @@ import ru.gb.gbapimay.order.dto.OrderDto;
 
 import java.util.List;
 
-/**
- * @author Artem Kropotov
- * created at 27.05.2022
- **/
 public interface OrderGateway {
     @GetMapping
     List<OrderDto> getOrderList();

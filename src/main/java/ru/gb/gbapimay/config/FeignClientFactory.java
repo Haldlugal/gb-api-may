@@ -16,10 +16,7 @@ import java.util.concurrent.TimeUnit;
 
 import static feign.FeignException.errorStatus;
 
-/**
- * @author Artem Kropotov
- * created at 29.05.2022
- **/
+
 @Component
 @RequiredArgsConstructor
 public class FeignClientFactory {

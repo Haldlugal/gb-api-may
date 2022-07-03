@@ -10,10 +10,6 @@ import ru.gb.gbapimay.manufacturer.api.ManufacturerGateway;
 import ru.gb.gbapimay.product.api.ProductGateway;
 import ru.gb.gbapimay.security.UserGateway;
 
-/**
- * @author Artem Kropotov
- * created at 27.05.2022
- **/
 @Configuration
 @EnableConfigurationProperties(GbApiProperties.class)
 @RequiredArgsConstructor

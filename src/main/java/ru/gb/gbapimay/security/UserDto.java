@@ -9,10 +9,7 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
-/**
- * @author Artem Kropotov
- * created at 01.06.2022
- **/
+
 @Getter
 @Setter
 @AllArgsConstructor

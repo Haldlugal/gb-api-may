@@ -11,10 +11,6 @@ import ru.gb.gbapimay.manufacturer.dto.ManufacturerDto;
 import java.net.URI;
 import java.util.List;
 
-/**
- * @author Artem Kropotov
- * created at 27.05.2022
- **/
 public interface ManufacturerGateway {
     @GetMapping
     List<ManufacturerDto> getManufacturerList();

@@ -2,7 +2,6 @@ package ru.gb.gbapimay.order.dto;
 
 import lombok.*;
 import org.apache.tomcat.jni.Address;
-import ru.gb.gbapimay.common.enums.OrderStatus;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;

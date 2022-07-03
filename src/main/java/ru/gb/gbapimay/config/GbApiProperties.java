@@ -4,10 +4,6 @@ import lombok.Getter;
 import lombok.Setter;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
-/**
- * @author Artem Kropotov
- * created at 27.05.2022
- **/
 @Getter
 @Setter
 @ConfigurationProperties(prefix = "gb.api")
